@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url(images/thirdImage.jpg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 13rem;
+}
+
+.ul-header-section {
+    display: flex;
+    gap: 30px;
+}
+
+.ul-header-section li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.ul-header-section li a {
+    text-decoration: none;
+    color: white;
+}
+
+.ul-search li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.ul-search li i {
+    color: white;
+}
+
+.header-desc {
+    width: 70%;
+    margin: auto;
+}
+
+.book-truck h3 {
+    color: #f7c119;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.fast-delivery p {
+    color: white;
+    font-weight: 400;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
