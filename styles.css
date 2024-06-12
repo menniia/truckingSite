@@ -3,23 +3,35 @@ body {
     box-sizing: border-box;
 }
 
-header {
-    background-image: url(images/thirdImage.jpg);
-    background-size: 100vw;
-    background-repeat: no-repeat;
-    height: 100vh;
-}
-
 .header-section {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 13rem;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.video-bg {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.logo {
+    margin-top: -32rem;
 }
 
 .ul-header-section {
     display: flex;
     gap: 30px;
+    /* to bring the header lists up */
+    margin-top: -31rem;
 }
 
 .ul-header-section li {
@@ -35,6 +47,8 @@ header {
 .ul-search li {
     list-style: none;
     cursor: pointer;
+    /* to take the search icon up */
+    margin-top: -17rem;
 }
 
 .ul-search li i {
@@ -44,18 +58,26 @@ header {
 .header-desc {
     width: 70%;
     margin: auto;
+    margin-top: -35rem;
 }
 
-.book-truck h3 {
-    color: #f7c119;
-    letter-spacing: 2px;
-    font-weight: 700;
-    font-size: 1.6rem;
+.benefits {
+    margin-top: 300px;
 }
 
-.fast-delivery p {
+.earn-desc h1 {
     color: white;
-    font-weight: 400;
-    font-size: 1.5rem;
-    letter-spacing: 1px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 50px;
+}
+
+.sign-up a {
+    background-color: #f7c119;
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+    color: white;
+    padding: 12px 20px 14px 20px;
+    border-radius: 30px;
+    cursor: pointer;
 }
