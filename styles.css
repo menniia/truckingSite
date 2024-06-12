@@ -97,6 +97,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     width: 80%;
     margin: auto;
+    gap: 20px;
 }
 
 .reasons-to-join {
@@ -123,9 +124,66 @@ body {
 }
 
 .image-section {
-    background-image: url(images/nicePage.jpeg);
+    background-image:linear-gradient(0deg,
+     rgba(0, 0, 0, 0.6),
+     rgba(0, 0, 0, 0.6)),
+     url(images/nicePage.jpeg);
     width: 100vw;
     height: 100vh;
     background-size: cover;
-    z-index: -1;
+}
+
+.parent-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.icon-parent {
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    background-color: #f7c119;
+    padding-top: 20px;
+    padding-left: 22px;
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+}
+
+.icon i {
+    width: 100px;
+    height: 100px;
+}
+
+.image-section-div {
+    text-align: center;
+    padding-top: 30px;
+    color: white;
+}
+
+.section-desc {
+    margin-left: 10px;
+}
+
+.section-desc h3 {
+    color: #f7c119;
+}
+
+.section-three-div p {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.section-three-div {
+    width: 80%;
+    margin-left: 80px;
 }
