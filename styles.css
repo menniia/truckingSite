@@ -1,6 +1,7 @@
 body {
     margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .header-section {
@@ -61,10 +62,6 @@ body {
     margin-top: -35rem;
 }
 
-.benefits {
-    margin-top: 300px;
-}
-
 .earn-desc h1 {
     color: white;
     font-family: "Open Sans", sans-serif;
@@ -80,4 +77,55 @@ body {
     padding: 12px 20px 14px 20px;
     border-radius: 30px;
     cursor: pointer;
+}
+
+.benefits-section {
+    margin-top: 160px;
+    background-color: rgb(196, 192, 192);
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.benefits {
+    width: 80%;
+    margin: auto;
+}
+
+.reason-div, 
+.express-desc {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+    margin: auto;
+}
+
+.reasons-to-join {
+    width: 80%;
+    margin: auto;
+}
+
+.how-it-works-section {
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.like-a-taxi {
+    text-align: center;
+}
+
+.how-it-works {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.icon-div {
+    text-align: center;
+}
+
+.image-section {
+    background-image: url(images/nicePage.jpeg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    z-index: -1;
 }
