@@ -1,3 +1,8 @@
+@font-face {
+    font-family: headlineFont;
+    src: url(headlines/Headlines-BoldItalic.otf);
+}
+
 body {
     margin: 0;
     box-sizing: border-box;
@@ -122,11 +127,12 @@ body {
 }
 
 .easy-fast h2 {
-    font-family: "Roboto", sans-serif;
+    /* font-family: "Roboto", sans-serif; */
+    font-family: headlineFont, sans-serif;
     font-weight: bolder;
-    letter-spacing: 1px;
-    font-size: 53px;
-    line-height: 48px;
+    letter-spacing: 6px;
+    font-size: 65px;
+    line-height: 53px;
 }
 
 .section-two-img {
@@ -148,7 +154,7 @@ body {
 }
 
 .contact-us {
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 .contact-us a {
