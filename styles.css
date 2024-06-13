@@ -1,6 +1,16 @@
 @font-face {
-    font-family: headlineFont;
-    src: url(headlines/Headlines-BoldItalic.otf);
+    font-family: headlineFontBold;
+    src: url(headlines/Headlines-Bold.otf);
+}
+
+@font-face {
+    font-family: headLineFontMedium;
+    src: url(headlines/Headlines-Medium.otf);
+}
+
+@font-face {
+    font-family: headlineFontRegular;
+    src: url(headlines/Headlines-Regular.otf);
 }
 
 body {
@@ -86,7 +96,7 @@ body {
 
 .benefits-section {
     margin-top: 160px;
-    background-color: rgb(196, 192, 192);
+    /* background-color: rgb(196, 192, 192); */
     padding-top: 70px;
     padding-bottom: 50px;
 }
@@ -94,6 +104,12 @@ body {
 .benefits {
     width: 80%;
     margin: auto;
+}
+
+.benefits h2 {
+    font-family: headLineFontMedium;
+    font-size: 40px;
+    letter-spacing: 2px;
 }
 
 .reason-div, 
@@ -110,25 +126,45 @@ body {
     margin: auto;
 }
 
+.delivery-images img {
+    width: 35x;
+    height: 35px;
+}
+
+.weekly-payout h4 {
+    font-family: headlineFontRegular;
+    font-weight: 800;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.weekly-payout p {
+    font-family: headlineFontRegular;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: -10px;
+}
+
 .section-two {
     display: flex;
     height: 90vh;
-    background-color: #f5f5f5;
+    /* background-color: #f5f5f5; */
 }
 
 .section-two-div {
     background-color: #f5f5f5;
-    border-radius: 0 30px 0 0;
+    border-radius: 30px;
     padding-left: 100px;
     padding-right: 100px;
     position: relative;
     z-index: 1;
     left: 30px;
+    margin-left: 10px;
 }
 
 .easy-fast h2 {
     /* font-family: "Roboto", sans-serif; */
-    font-family: headlineFont, sans-serif;
+    font-family: headlineFontBold, sans-serif;
     font-weight: bolder;
     letter-spacing: 6px;
     font-size: 65px;
@@ -171,114 +207,83 @@ body {
 .side-img img {
     width: 45vw;
     height: 90vh;
+    border-radius: 0 30px 30px 0;
     position: absolute;
 }
 
-
-/* .section-two-div {
-    display: flex;
-}
-
-.section-two-div {
-    background-color: #f5f5f5;
-    border-radius: 0 50px 0 0;
-}
-
-.easy-fast h2 {
-    font-size: 53px;
-    line-height: 48px;
-}
-
-.section-two-img {
-    display: flex;
-    gap: 20px;
-}
-
-.section-two-img img {
-    width: 300px;
-    height: 300px;
-    z-index: -1;
-} */
-
 .how-it-works-section {
-    margin-top: 40px;
-    margin-bottom: 100px;
-}
-
-.like-a-taxi {
-    text-align: center;
+    height: 60vh;
+    margin-top: -20px;
+    margin-bottom: 80px;
 }
 
 .how-it-works {
     text-align: center;
     margin-bottom: 80px;
+    margin-top: 100px;
+}
+
+.how-it-works h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 40px;
 }
 
 .icon-div {
     text-align: center;
 }
 
-.image-section {
-    background-image:linear-gradient(0deg,
-     rgba(0, 0, 0, 0.6),
-     rgba(0, 0, 0, 0.6)),
-     url(images/nicePage.jpeg);
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
+.icon-div p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
 }
 
-.parent-image {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 20px;
+.sectionThree {
+    display: flex;
+    height: 90vh;
+    margin-left: 60px;
+}
+
+.sectionThreeDiv {
+    background-color: #f5f5f5;
+    border-radius: 28px;
+    padding-left: 100px;
+    padding-right: 100px;
+    position: relative;
+    z-index: 1;
+    left: 30px;
+    margin-left: 10px;
+    height: 28.7rem;
+}
+
+
+.sectionThreeParagraph p {
+    font-family: headlineFontRegular;
+    margin-top: 150px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.sectionThreeVideo {
+    width: 45vw;
+    border-radius: 0 30px 30px 0;
+    position: absolute;
+}
+
+.sectionFour {
+    background-color: #f5f5f5;
+    padding-top: 20px;
+    border-radius: 30px 30px 0 0;
+}
+
+.secFourGrandDiv {
+    display: flex;
     width: 80%;
     margin: auto;
 }
 
-.icon-parent {
-    display: flex;
-    gap: 10px;
-}
-
-.icon {
-    background-color: #f7c119;
-    padding-top: 20px;
-    padding-left: 22px;
-    border-radius: 50%;
-    width: 37px;
-    height: 37px;
-}
-
-.icon i {
-    width: 100px;
-    height: 100px;
-}
-
-.image-section-div {
-    text-align: center;
-    padding-top: 30px;
-    color: white;
-}
-
-.section-desc {
-    margin-left: 10px;
-}
-
-.section-desc h3 {
-    color: #f7c119;
-}
-
-.section-three-div p {
-    color: white;
-    font-family: "Open Sans", sans-serif;
-    font-style: italic;
-    font-size: 20px;
-}
-
-.section-three-div {
-    width: 80%;
-    margin-left: 80px;
+.sectionFourDiveOne h1 {
+    font-family: headlineFontBold;
+    font-size: 60px;
+    letter-spacing: 2px;
+    line-height: 50px;
 }
