@@ -332,6 +332,9 @@ body {
 }
 
 .sectionSixHeaders h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
     margin-bottom: 10px;
     margin-left: 20rem;
     margin-right: 20rem;
@@ -343,6 +346,12 @@ body {
 
 .frequently-asked {
     text-align: center;
+}
+
+.frequently-asked h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 37px;
+    font-weight: 700;
 }
 
 .parentAnchor {
